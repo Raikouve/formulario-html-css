@@ -19,19 +19,58 @@
             <fieldset>
                 <div>
                     <label>Nome</label>
-                    <imput type="text" name="nome" id="nome">
+                    <input type="text" name="nome" id="nome">
                 </div>
 
                 <div>
                     <label>Sobrenome</label>
-                    <imput type="text" name="sobrenome" id="sobrenome">
+                    <input type="text" name="sobrenome" id="sobrenome">
                 </div>
             </fieldset>
 
             <div>
                 <label>E-mail</label>
-                <imput type="email" name="email" id="email">
+                <input type="email" name="email" id="email">
             </div>
+
+            <div>
+                <label>Sua faixa etária</label>
+                <label>
+                    <input type="radio" name="idade" value="jovem" checked>12 a 17 anos
+                </label>
+                <label>
+                    <input type="radio" name="idade" value="adulto">18 a 35 anos
+                </label>
+                <label>
+                    <input type="radio" name="idade" value="idade-avancada">36+ anos
+                </label>
+            </div>
+            <div>
+                <label>Qual o seu nível de inglês?</label>
+                <select name="nivel" id="nivel">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Nenhum</option>
+                    <option>Básico</option>
+                    <option>Intermediário</option>
+                    <option>Avançado</option>
+                </select>
+            </div>
+
+            <fieldset>
+                <div>
+                    <label>Sua motivação para aprender inglês:</label>
+                    <input type="checkbox" id="mot1" name="mot1" value="trabalho"> 
+                    <label for="mot1">Trabalho</label>
+                    <input type="checkbox" id="mot2" name="mot2" value="cultura"> 
+                    <label for="mot2">Cultura</label>
+                    <input type="checkbox" id="mot3" name="mot3" value="intercambio"> 
+                    <label for="mot3">Intercâmbio</label>
+                    <input type="checkbox" id="mot4" name="mot4" value="social"> 
+                    <label for="mot4">Social</label>
+                    <input type="checkbox" id="mot5" name="mot5" value="outro"> 
+                    <label for="mot5">Outro</label>
+                </div>
+            </fieldset>
         </form>
 
 </body>
