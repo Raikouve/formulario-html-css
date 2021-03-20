@@ -5,36 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="casa-icon.ico " type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <title>Formulário</title>
 </head>
 <body>
     
         <div>
-            <h1>Cadastre-se</h1>
-            <p>Complete suas informações nos campos abaixo</p>
+            <h1 id="titulo">Cadastre-se na Toni English</h1>
+            <h2 id="subtitulo">O maior e melhor curso de ingês do Brasil!</h2>
+            <br>
+            <p id="instrucao"><strong>Complete suas informações nos campos abaixo:</strong></p>
             <br>
         </div>
 
         <form>
-            <fieldset>
-                <div>
-                    <label>Nome</label>
-                    <input type="text" name="nome" id="nome">
+            <fieldset class="campo" id="info-pessoal">
+                <div class="elementos">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
                 </div>
 
-                <div>
-                    <label>Sobrenome</label>
-                    <input type="text" name="sobrenome" id="sobrenome">
+                <div class="elementos">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
                 </div>
             </fieldset>
 
-            <div>
-                <label>E-mail</label>
-                <input type="email" name="email" id="email">
+            <div class="elementos">
+                <label for="email"><strong>E-mail</strong></label>
+                <input type="email" name="email" id="email" required>
             </div>
 
-            <div>
-                <label>Sua faixa etária</label>
+            <div class="elementos">
+                <label><strong>Sua faixa etária:</strong></label>
                 <label>
                     <input type="radio" name="idade" value="jovem" checked>12 a 17 anos
                 </label>
@@ -45,8 +48,8 @@
                     <input type="radio" name="idade" value="idade-avancada">36+ anos
                 </label>
             </div>
-            <div>
-                <label>Qual o seu nível de inglês?</label>
+            <div class="elementos">
+                <label for="nivel"><strong>Qual o seu nível de inglês?</strong></label>
                 <select name="nivel" id="nivel">
                     <option selected disabled value="">Selecione</option>
                     <option>Nenhum</option>
@@ -56,9 +59,9 @@
                 </select>
             </div>
 
-            <fieldset>
-                <div>
-                    <label>Sua motivação para aprender inglês:</label>
+            <fieldset class="campo" id="motivacao">
+                <div class="elementos" id="check">
+                    <label><strong>Sua motivação para aprender inglês:</strong></label> <br> <br>
                     <input type="checkbox" id="mot1" name="mot1" value="trabalho"> 
                     <label for="mot1">Trabalho</label>
                     <input type="checkbox" id="mot2" name="mot2" value="cultura"> 
@@ -68,9 +71,18 @@
                     <input type="checkbox" id="mot4" name="mot4" value="social"> 
                     <label for="mot4">Social</label>
                     <input type="checkbox" id="mot5" name="mot5" value="outro"> 
-                    <label for="mot5">Outro</label>
+                    <label for="mot5">Outro</label> 
+                    <br> <br>
+                    <label for="outro"><strong>Diga abaixo quais outras motivações você tem para aprender ingês:</strong></label>
+                    <textarea rows="8" style="width: 26em" name="caixa-outro" id="caixa-outro" cols="30" rows="10"></textarea>
                 </div>
             </fieldset>
+            <div class="elementos">
+                <br>
+            </div>
+
+            <button class="botao" type="submit">Enviar</button>
+
         </form>
 
 </body>
