@@ -58,10 +58,6 @@ fieldset.campo .elementos {
     display: block;
 }
 
-.elementos input[type="checkbox"] {
-}
-}
-
 .elementos select option {
     padding-right: 1em;
 }
